@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #00A9FF 50%, #ffffff 50%);
+}
+
+.title{
+    color: white;
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-bottom: -15px;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.logo-regist{
+    border-radius: 100%;
+    width: 100%;
+    min-width: 200px;
+    height: auto;
+   
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-acc-text {
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.current-data{
+    text-align: left;
+    color: rgb(97, 97, 97);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.input-style {
+    margin-bottom: 15px;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 8px;
+    border-color: #E0EFFE;
+
+}
+
+.button-style {
+    padding: 8px 16px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007DFA;
+    border-radius: 8px;
+    border-color: #007DFA;
+    cursor: pointer;
+    margin-top: 15px;
+    font-weight: bolder;
+}
+
+.logout-color{
+    background-color: rgb(147, 46, 46);
+    border-color: rgb(147, 46, 46);
+}
+
+.logout-color:hover{
+    background-color: rgb(207, 79, 79);
+}
+
+.login-href-text{
+    color: #797979;
+}
+
+button:hover {
+    background-color: #65b2ff;
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.warningText{
+    color: red;
+}
