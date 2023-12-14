@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\homecontroller;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -17,7 +18,7 @@ use Illuminate\Support\Facades\Auth;
 */
 
 
-Route::get('/', [UserController::class, 'index']);
+Route::get('/', [homecontroller::class, 'homepage']);
 
 Route::get('/LoginUser', function () {
     return view('LoginUser');
