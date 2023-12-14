@@ -83,11 +83,5 @@ class UserController extends Controller
         
     }
 
-    public function index()
-    {
-        $isLoggedIn = Auth::check();
-
-        return view('test(buat ngetest cookie dari auth)', ['isLoggedIn' => $isLoggedIn]);
-    }
 
 }
