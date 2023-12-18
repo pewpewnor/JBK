@@ -88,3 +88,24 @@
     color: #233454;
     padding: 0px 5px;
 }
+
+@media (max-width: 1800px){
+    .main-card-1 h1{
+        font-size: 20px;
+        color: #233454;
+        padding: 0px 5px;
+        margin-top: 8px;
+    }
+    
+    .main-card-1 p{
+        font-size: 11px;
+        color: #233454;
+        padding: 0px 5px;
+    }
+    
+    .main-card-1 i{
+        font-size: 11px;
+        color: #233454;
+        padding: 0px 5px;
+    }
+}

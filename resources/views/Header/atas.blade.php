@@ -10,6 +10,12 @@
                 <li><a href="/">Home</a></li>
             </ul>
             <ul class="ul-container">
+                <li><a href="/UpdateProfile">About</a></li>
+            </ul>
+            <ul class="ul-container">
+                <li><a href="/UpdateProfile">Category</a></li>
+            </ul>
+            <ul class="ul-container">
                 <li><a href="/UpdateProfile">Profile</a></li>
             </ul>
         </div>
