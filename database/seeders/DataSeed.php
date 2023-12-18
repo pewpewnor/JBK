@@ -22,6 +22,11 @@ class DataSeed extends Seeder
                 'shopName' => 'New Agung Jaya',
                 'type' => 'mobil',
                 'price' => '10000000',
+                'engine' => '1NR-VE 1.329 cc 4 cillinder',
+                'power' => '98 PS',
+                'torsi' => '12,4 Kgm',
+                'kilometer' => '120.000 Km',
+                'color' => 'black'
             ],
         );
 
@@ -34,6 +39,11 @@ class DataSeed extends Seeder
                 'shopName' => 'New Agung Jaya',
                 'type' => 'mobil',
                 'price' => '20000000',
+                'engine' => '1NR-VE 1.329 cc 4 cillinder',
+                'power' => '98 PS',
+                'torsi' => '12,4 Kgm',
+                'kilometer' => '120.000 Km',
+                'color' => 'black'
             ],
         );
 
@@ -46,6 +56,11 @@ class DataSeed extends Seeder
                 'shopName' => 'New Agung Jaya',
                 'type' => 'mobil',
                 'price' => '18000000',
+                'engine' => '1NR-VE 1.329 cc 4 cillinder',
+                'power' => '98 PS',
+                'torsi' => '12,4 Kgm',
+                'kilometer' => '120.000 Km',
+                'color' => 'black'
             ],
         );
 
@@ -58,6 +73,11 @@ class DataSeed extends Seeder
                 'shopName' => 'New Agung Jaya',
                 'type' => 'mobil',
                 'price' => '19000000',
+                'engine' => '1NR-VE 1.329 cc 4 cillinder',
+                'power' => '98 PS',
+                'torsi' => '12,4 Kgm',
+                'kilometer' => '120.000 Km',
+                'color' => 'black'
             ],
         );
 
@@ -71,6 +91,11 @@ class DataSeed extends Seeder
                 'shopName' => 'Toko Sinar Jaya',
                 'type' => 'motor',
                 'price' => '15000000',
+                'engine' => '1NR-VE 1.329 cc 4 cillinder',
+                'power' => '98 PS',
+                'torsi' => '12,4 Kgm',
+                'kilometer' => '120.000 Km',
+                'color' => 'black'
             ],
         );
 
@@ -83,6 +108,11 @@ class DataSeed extends Seeder
                 'shopName' => 'Toko Sinar Jaya',
                 'type' => 'motor',
                 'price' => '2500000',
+                'engine' => '1NR-VE 1.329 cc 4 cillinder',
+                'power' => '98 PS',
+                'torsi' => '12,4 Kgm',
+                'kilometer' => '120.000 Km',
+                'color' => 'black'
             ],
         );
 
@@ -95,6 +125,11 @@ class DataSeed extends Seeder
                 'shopName' => 'Toko Sinar Jaya',
                 'type' => 'motor',
                 'price' => '28000000',
+                'engine' => '1NR-VE 1.329 cc 4 cillinder',
+                'power' => '98 PS',
+                'torsi' => '12,4 Kgm',
+                'kilometer' => '120.000 Km',
+                'color' => 'black'
             ],
         );
 
@@ -107,6 +142,11 @@ class DataSeed extends Seeder
                 'shopName' => 'Toko Sinar Jaya',
                 'type' => 'motor',
                 'price' => '19000000',
+                'engine' => '1NR-VE 1.329 cc 4 cillinder',
+                'power' => '98 PS',
+                'torsi' => '12,4 Kgm',
+                'kilometer' => '120.000 Km',
+                'color' => 'black'
             ],
         );
     }

@@ -20,6 +20,11 @@ return new class extends Migration
             $table->string('shopName');
             $table->string('type');
             $table->integer('price');
+            $table->string('engine');
+            $table->string('power');
+            $table->string('Torsi');
+            $table->string('kilometer');
+            $table->string('color');
             $table->timestamps();
         });
     }
