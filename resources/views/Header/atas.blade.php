@@ -1,7 +1,7 @@
 <div class="container">
 
     <div class="Logo">
-        <h1 class>JBK</h1>
+        <img src="\Assets\logo.jpg" alt="">
     </div>
 
     @if($isLoggedIn)
