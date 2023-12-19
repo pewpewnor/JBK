@@ -3,8 +3,10 @@
 use App\Http\Controllers\homecontroller;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\DetailPageController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -31,6 +33,8 @@ Route::get('/RegisterUser', function () {
 Route::get('/UpdateProfile', function () {
     return view('UpdateProfile');
 });
+
+Route::get('/DetailPage/{id}', [DetailPageController::class, 'AccessDetail'])->name('detail.page');
 
 Route::post('/processRegister', [UserController::class, 'registerUser'])->name("registerUser");
 
