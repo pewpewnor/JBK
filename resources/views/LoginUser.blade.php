@@ -25,6 +25,7 @@
             <div class="container">
                 <p class="create-acc-text">Login to Your Account</p>
                 <form method="GET" action="{{route('loginUser')}}">
+                    @csrf
                     @method('GET')
                     <label for="email">Email</label>
                     <input class="input-style" type="email" id="email" name="email" value="{{ old('email') }}">
