@@ -25,12 +25,22 @@
             <div class="container">
                 <p class="create-acc-text">Login to Your Account</p>
                 <form method="GET" action="{{route('loginUser')}}">
+                    @method('GET')
                     <label for="email">Email</label>
-                    <input class="input-style" type="email" id="email" name="email" required>
+                    <input class="input-style" type="text" id="email" name="email" value="{{ old('email') }}">
+                    @error('email')
+                      <p class="text-danger">{{ $message }}</p>
+                    @endif
                     
                     <label for="password">Password</label>
-                    <input class="input-style" type="password" id="password" name="password" required>
-                    
+                    <input class="input-style" type="text" id="password" name="password">
+                    @error('password')
+                      <p class="text-danger">{{ $message }}</p>
+                    @endif
+
+                    @error('credential')
+                      <p class="text-danger">{{ $message }}</p>
+                    @endif
                     <button class="button-style" type="submit">Login now</button>
                 </form>
                 <p class="login-href-text">Dont Have An Account? <a href="/RegisterUser">Create Account</a></p>

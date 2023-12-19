@@ -18,10 +18,9 @@ class UserController extends Controller
         ]);
 
         User::create([
-            "name"=> $request->username,
+            "name" => $request->username,
             "email"=> $request->email,
             "password"=> $request->password,
-
         ]);
 
         return view("LoginUser");
@@ -29,8 +28,12 @@ class UserController extends Controller
 
     public function loginUser(Request $request){
         $request->validate([
-            'email' => 'required',
+            'email' => 'required|email',
             'password' => 'required',
+        ], [
+            'email.required' => 'The email field is required',
+            'email.email' => 'Please enter a valid email address',
+            'password.required' => 'The password field is required',
         ]);
 
         $credentials = $request->only('email', 'password');
@@ -38,11 +41,11 @@ class UserController extends Controller
         if (Auth::attempt($credentials)) {
             // Authentication passed
             return redirect('/');
-        }
-        else{
-            return view("LoginUser");
+        } else {
+            return redirect()->back()->withErrors(['credential' => 'Username or password is incorrect']);
         }
     }
+
 
     public function showUserData()
     {
