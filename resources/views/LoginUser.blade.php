@@ -27,13 +27,13 @@
                 <form method="GET" action="{{route('loginUser')}}">
                     @method('GET')
                     <label for="email">Email</label>
-                    <input class="input-style" type="text" id="email" name="email" value="{{ old('email') }}">
+                    <input class="input-style" type="email" id="email" name="email" value="{{ old('email') }}">
                     @error('email')
                       <p class="text-danger">{{ $message }}</p>
                     @endif
                     
                     <label for="password">Password</label>
-                    <input class="input-style" type="text" id="password" name="password">
+                    <input class="input-style" type="password" id="password" name="password">
                     @error('password')
                       <p class="text-danger">{{ $message }}</p>
                     @endif
