@@ -17,7 +17,6 @@ class UserSeeder extends Seeder
             'name' => 'admin',
             'email' => 'a@.com',
             'password' => '12345',
-            'role' => 'Admin',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -26,7 +25,14 @@ class UserSeeder extends Seeder
             'name' => 'customer',
             'email' => 'c@.com',
             'password' => '12345',
-            'role' => 'Customer',
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'customer',
+            'email' => 'a@a.com',
+            'password' => '12345',
             'created_at' => now(),
             'updated_at' => now(),
         ]);

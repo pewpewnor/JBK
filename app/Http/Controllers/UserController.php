@@ -13,8 +13,8 @@ class UserController extends Controller
     public function registerUser(Request $request){
         $request->validate([
             'username' => 'required',
-            'email' => 'required',
-            'password' => 'required',
+            'email' => 'required|email|unique:users',
+            'password' => 'required|min:5',
         ]);
 
         User::create([
@@ -30,10 +30,6 @@ class UserController extends Controller
         $request->validate([
             'email' => 'required|email',
             'password' => 'required',
-        ], [
-            'email.required' => 'The email field is required',
-            'email.email' => 'Please enter a valid email address',
-            'password.required' => 'The password field is required',
         ]);
 
         $credentials = $request->only('email', 'password');
