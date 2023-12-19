@@ -26,15 +26,28 @@
                 <p class="create-acc-text">Create an Account</p>
                 <form method="POST" action="{{route('registerUser')}}">
                     @csrf
+                    @method('POST')
                     <label for="username">Username</label>
-                    <input class="input-style" type="text" id="username" name="username" required>
-                    
+                    <input class="input-style" type="text" id="username" name="username" value="{{ old('username') }}">
+                    @error('username')
+                      <p class="text-danger">{{ $message }}</p>
+                    @endif
+
                     <label for="email">Email</label>
-                    <input class="input-style" type="email" id="email" name="email" required>
-                    
+                    <input class="input-style" type="text" id="email" name="email" value="{{ old('email') }}">
+                    @error('email')
+                      <p class="text-danger">{{ $message }}</p>
+                    @endif
+
                     <label for="password">Password</label>
-                    <input class="input-style" type="password" id="password" name="password" required>
+                    <input class="input-style" type="password" id="password" name="password">
+                    @error('password')
+                      <p class="text-danger">{{ $message }}</p>
+                    @endif
                     
+                    @error('general')
+                      <p class="text-danger">{{ $message }}</p>
+                    @endif
                     <button class="button-style" type="submit">Create account</button>
                 </form>
                 <p class="login-href-text">Already Have An Account? <a href="/LoginUser">Log In</a></p>
