@@ -15,4 +15,7 @@ class Data extends Model
         'engine', 'power', 'Torsi', 'kilometer', 'color'
     ];
 
+    public function category() {
+        return $this->belongsTo(Category::class);
+    }
 }

@@ -10,7 +10,6 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class DataSeed extends Seeder
 {
-
     public function run(): void
     {
         DB::table('data')->insert(
@@ -20,13 +19,13 @@ class DataSeed extends Seeder
                 'image' => 'Bugatti.jpg',
                 'location' => 'Surabaya',
                 'shopName' => 'New Agung Jaya',
-                'type' => 'mobil',
                 'price' => '10000000',
                 'engine' => '1NR-VE 1.329 cc 4 cillinder',
                 'power' => '98 PS',
                 'torsi' => '12,4 Kgm',
                 'kilometer' => '120.000 Km',
-                'color' => 'black'
+                'color' => 'black',
+                'category_id' => 1,
             ],
         );
 
@@ -37,13 +36,13 @@ class DataSeed extends Seeder
                 'image' => 'McClaren.jpg',
                 'location' => 'Surabaya',
                 'shopName' => 'New Agung Jaya',
-                'type' => 'mobil',
                 'price' => '20000000',
                 'engine' => '1NR-VE 1.329 cc 4 cillinder',
                 'power' => '98 PS',
                 'torsi' => '12,4 Kgm',
                 'kilometer' => '120.000 Km',
-                'color' => 'black'
+                'color' => 'black',
+                'category_id' => 1,
             ],
         );
 
@@ -54,13 +53,13 @@ class DataSeed extends Seeder
                 'image' => 'Picture1.jpeg',
                 'location' => 'Surabaya',
                 'shopName' => 'New Agung Jaya',
-                'type' => 'mobil',
                 'price' => '18000000',
                 'engine' => '1NR-VE 1.329 cc 4 cillinder',
                 'power' => '98 PS',
                 'torsi' => '12,4 Kgm',
                 'kilometer' => '120.000 Km',
-                'color' => 'black'
+                'color' => 'black',
+                'category_id' => 1,
             ],
         );
 
@@ -71,13 +70,13 @@ class DataSeed extends Seeder
                 'image' => 'aventador.jpg',
                 'location' => 'Surabaya',
                 'shopName' => 'New Agung Jaya',
-                'type' => 'mobil',
                 'price' => '19000000',
                 'engine' => '1NR-VE 1.329 cc 4 cillinder',
                 'power' => '98 PS',
                 'torsi' => '12,4 Kgm',
                 'kilometer' => '120.000 Km',
-                'color' => 'black'
+                'color' => 'black',
+                'category_id' => 1,
             ],
         );
 
@@ -89,13 +88,13 @@ class DataSeed extends Seeder
                 'image' => 'R25.jpeg',
                 'location' => 'Surabaya',
                 'shopName' => 'Toko Sinar Jaya',
-                'type' => 'motor',
                 'price' => '15000000',
                 'engine' => '1NR-VE 1.329 cc 4 cillinder',
                 'power' => '98 PS',
                 'torsi' => '12,4 Kgm',
                 'kilometer' => '120.000 Km',
-                'color' => 'black'
+                'color' => 'black',
+                'category_id' => 2,
             ],
         );
 
@@ -106,13 +105,13 @@ class DataSeed extends Seeder
                 'image' => 'FoxR3.jpg',
                 'location' => 'Surabaya',
                 'shopName' => 'Toko Sinar Jaya',
-                'type' => 'motor',
                 'price' => '2500000',
                 'engine' => '1NR-VE 1.329 cc 4 cillinder',
                 'power' => '98 PS',
                 'torsi' => '12,4 Kgm',
                 'kilometer' => '120.000 Km',
-                'color' => 'black'
+                'color' => 'black',
+                'category_id' => 2,
             ],
         );
 
@@ -123,13 +122,13 @@ class DataSeed extends Seeder
                 'image' => 'R1M.jpg',
                 'location' => 'Surabaya',
                 'shopName' => 'Toko Sinar Jaya',
-                'type' => 'motor',
                 'price' => '28000000',
                 'engine' => '1NR-VE 1.329 cc 4 cillinder',
                 'power' => '98 PS',
                 'torsi' => '12,4 Kgm',
                 'kilometer' => '120.000 Km',
-                'color' => 'black'
+                'color' => 'black',
+                'category_id' => 2,
             ],
         );
 
@@ -140,13 +139,13 @@ class DataSeed extends Seeder
                 'image' => 'h2r.jpg',
                 'location' => 'Surabaya',
                 'shopName' => 'Toko Sinar Jaya',
-                'type' => 'motor',
                 'price' => '19000000',
                 'engine' => '1NR-VE 1.329 cc 4 cillinder',
                 'power' => '98 PS',
                 'torsi' => '12,4 Kgm',
                 'kilometer' => '120.000 Km',
-                'color' => 'black'
+                'color' => 'black',
+                'category_id' => 2,
             ],
         );
     }

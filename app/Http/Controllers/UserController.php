@@ -27,6 +27,10 @@ class UserController extends Controller
     }
 
     public function loginUser(Request $request){
+        if (Auth::check()) {
+            return redirect('/');
+        }
+
         $request->validate([
             'email' => 'required|email',
             'password' => 'required',
@@ -41,7 +45,6 @@ class UserController extends Controller
             return redirect()->back()->withErrors(['credential' => 'Username or password is incorrect']);
         }
     }
-
 
     public function showUserData()
     {
@@ -79,8 +82,5 @@ class UserController extends Controller
         // ]);
 
         return redirect('/UpdateProfile');
-        
     }
-
-
 }

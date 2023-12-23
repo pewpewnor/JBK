@@ -4,7 +4,7 @@
         <img src="\Assets\logo.jpg" alt="">
     </div>
 
-    @if($isLoggedIn)
+    @if(Auth::check())
         <div class="navbar-container">
             <ul class="ul-container">
                 <li><a href="/">Home</a></li>

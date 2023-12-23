@@ -13,7 +13,7 @@
 @extends('Header.atas')
     
 @section('container')
-       <div class="home-container">
+    <div class="home-container">
       <img src="/Assets/Toyota-86.jpg" alt="mobil" class="Toyota-86" />
     </div>
     
@@ -25,47 +25,36 @@
 
     <div class="card1">
       <div class="card2"></div>
-      @foreach ($database as $db)
-        @if ($loop->index == 4)
-            @break
-        @else
+      @foreach ($mobils as $mobil)
         <div class="main-card-1">
-            <img src="/Assets/{{$db->image}}" alt="item" class="item"></a>
-            <h1>{{$db->itemName}}</h1>
-            <p><i class="fa-solid fa-rupiah-sign"></i>{{$db->price}}</p>
-            <p><i class="fa-solid fa-truck"></i> Deliver to {{$db->location}} Only</p>
-            <p><i class="fa-solid fa-square-check"></i>{{$db->shopName}}</p>
+            <img src="/Assets/{{$mobil->image}}" alt="item" class="item"></a>
+            <h1>{{$mobil->itemName}}</h1>
+            <p><i class="fa-solid fa-rupiah-sign"></i>{{$mobil->price}}</p>
+            <p><i class="fa-solid fa-truck"></i> Deliver to {{$mobil->location}} Only</p>
+            <p><i class="fa-solid fa-square-check"></i>{{$mobil->shopName}}</p>
         </div>
-        @endif
       @endforeach
     </div>
     <br><br>
 
 
     <div class="subjudul">
-      <h1>Motorcycle that are popular</h1>
+      <h1>Motorcycles that are popular</h1>
     </div>
 
     <div class="card1">
       <div class="card2"></div>
-      @foreach ($database2 as $db2)
-        @if ($loop->index == 4)
-            @break
-        @else
+      @foreach ($motors as $motor)
         <div class="main-card-1">
-            <img src="/Assets/{{$db2->image}}" alt="item" class="item"></a>
-            <h1>{{$db2->itemName}}</h1>
-            <p><i class="fa-solid fa-rupiah-sign"></i>{{$db2->price}}</p>
-            <p><i class="fa-solid fa-truck"></i> Deliver to {{$db2->location}} Only</p>
-            <p><i class="fa-solid fa-square-check"></i>{{$db2->shopName}}</p>
+            <img src="/Assets/{{$motor->image}}" alt="item" class="item"></a>
+            <h1>{{$motor->itemName}}</h1>
+            <p><i class="fa-solid fa-rupiah-sign"></i>{{$motor->price}}</p>
+            <p><i class="fa-solid fa-truck"></i> Deliver to {{$motor->location}} Only</p>
+            <p><i class="fa-solid fa-square-check"></i>{{$motor->shopName}}</p>
         </div>
-        @endif
       @endforeach
     </div>
-
     <br><br>
-@endsection
- 
-
+  @endsection
   </body>
 </html>
