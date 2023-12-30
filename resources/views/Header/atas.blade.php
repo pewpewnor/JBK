@@ -1,16 +1,13 @@
 <div class="container">
 
     <div class="Logo">
-        <img src="\Assets\logo.jpg" alt="">
+        <img src="\Assets\logo.jpg" alt="logo">
     </div>
 
     @if(Auth::check())
         <div class="navbar-container">
             <ul class="ul-container">
                 <li><a href="/">Home</a></li>
-            </ul>
-            <ul class="ul-container">
-                <li><a href="/UpdateProfile">About</a></li>
             </ul>
             <ul class="ul-container">
                 <li><a href="/UpdateProfile">Category</a></li>

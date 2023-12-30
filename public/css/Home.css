@@ -6,7 +6,7 @@
 }
 
 .home-container{
-    height: 600px;
+    height: 700px;
     width: 100%;
     text-align: center;
     font-family: 'Poppins', sans-serif;
@@ -14,7 +14,7 @@
 
 
 .Toyota-86{
-    height: 600px;
+    height: 700px;
     width: 70%;
     border-radius: 20px;
 }
@@ -90,22 +90,154 @@
 }
 
 @media (max-width: 1800px){
+    
+    .main-card-1{
+        height: 280px;
+    }
+
     .main-card-1 h1{
         font-size: 20px;
-        color: #233454;
-        padding: 0px 5px;
-        margin-top: 8px;
     }
     
     .main-card-1 p{
         font-size: 11px;
-        color: #233454;
-        padding: 0px 5px;
     }
     
     .main-card-1 i{
         font-size: 11px;
-        color: #233454;
-        padding: 0px 5px;
     }
+}
+
+@media (max-width: 1500px){
+
+    .card2{
+        width: 0%;
+        height: 0px;
+        background-color: white;;
+        border-radius: 0px;
+        margin-left: 0px;
+    }
+
+    .main-card-1{
+        right: 0;
+    }
+}
+
+@media (max-width: 1150px){
+
+    .Toyota-86{
+        width: 90%;
+    }
+
+    .subjudul{
+        width: 100%;
+        height: 50px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .subjudul h1{
+        font-size: 30px;
+    }
+    
+    .card1{
+        width: 100%;
+    }
+
+    .main-card-1 h1{
+        font-size: 20px;
+    }
+
+   .main-card-1 p{
+        font-size: 11px;
+   } 
+
+   
+}
+
+@media (max-width: 780px){
+
+    .Toyota-86{
+        width: 95%;
+    }
+
+    .card1{
+        height: 300px;
+    }
+
+    .main-card-1 h1{
+        font-size: 15px;
+    }
+
+   .main-card-1 p{
+        font-size: 9px;
+   } 
+
+   .main-card-1{
+    height: 250px;
+   }
+   
+}
+
+@media (max-width: 650px){
+    .home-container{
+        height: 400px;
+    }
+
+    .Toyota-86{
+        width: 98%;
+        height: 400px;
+    }
+
+    .main-card-1 h1{
+        font-size: 12px;
+    }
+
+   .main-card-1 p{
+        font-size: 8px;
+   }  
+
+   .main-card-1 i{
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 580px){
+
+    .card1{
+        height: 200px;
+    }
+
+    .home-container{
+        height: 360px;
+    }
+    
+    .main-card-1{
+        margin-left: 5px;
+    }
+
+    .subjudul{
+        height: 10px;
+    }
+
+    .main-card-1 p{
+        font-size: 7px;
+   }  
+
+   .main-card-1 i{
+        font-size: 7px;
+    }
+
+    .subjudul h1{
+        font-size: 20px;
+    }
+
+    .item{
+        width: 100%;
+        height: 90px;
+    }
+
+    .main-card-1{
+        height: 200px;
+       }
 }
