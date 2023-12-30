@@ -27,7 +27,7 @@
       <div class="card2"></div>
       @foreach ($mobils as $mobil)
         <div class="main-card-1">
-            <img src="/Assets/{{$mobil->image}}" alt="item" class="item"></a>
+            <a href="/DetailPage/{{$mobil->id}}"><img src="/Assets/{{$mobil->image}}" alt="item" class="item"></a>
             <h1>{{$mobil->itemName}}</h1>
             <p><i class="fa-solid fa-rupiah-sign"></i>{{$mobil->price}}</p>
             <p><i class="fa-solid fa-truck"></i> Deliver to {{$mobil->location}} Only</p>
@@ -46,7 +46,7 @@
       <div class="card2"></div>
       @foreach ($motors as $motor)
         <div class="main-card-1">
-            <img src="/Assets/{{$motor->image}}" alt="item" class="item"></a>
+          <a href="/DetailPage/{{$motor->id}}"><img src="/Assets/{{$motor->image}}" alt="item" class="item"></a>
             <h1>{{$motor->itemName}}</h1>
             <p><i class="fa-solid fa-rupiah-sign"></i>{{$motor->price}}</p>
             <p><i class="fa-solid fa-truck"></i> Deliver to {{$motor->location}} Only</p>

@@ -14,14 +14,7 @@ class DetailPageController extends Controller
     {
         $isLoggedIn = Auth::check();
 
-        
-
         $vehicle = Data::find($id);
-
-        if (!$vehicle) {
-            abort(404); // Or handle not found scenario as needed
-        }
-
 
         return view('DetailPage', compact('isLoggedIn', 'vehicle'));
 
