@@ -4,6 +4,7 @@ use App\Http\Controllers\homecontroller;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\DetailPageController;
+use App\Http\Controllers\PaymentController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -54,6 +55,10 @@ Route::get('/logout', function () {
 })->name('logout');
 
 Route::put('/UpdateProfile', [UserController::class, 'updateProfile'])->name('users.update');
+
+Route::get('/payment', [PaymentController::class, 'payment']);
+
+Route::post('/payment', [PaymentController::class, 'validation'])->name('PaymentController.validation');
 
 //default routing dari template (kita kayaknya gak pake)
 // Route::get('/dashboard', function () {
