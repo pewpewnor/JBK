@@ -67,19 +67,11 @@ class UserController extends Controller
 
         $user = User::find(Auth::id());
 
-        // $Curruser = User::where('id', $user->id);
-
         $user->name = $request->input('username');
         $user->email = $request->input('email'); 
         $user->password = $request->input('password');
 
         $user->save();
-
-        // $user->update([
-        //     'name' => $request->input('username'),
-        //     'email' => $request->input('email'),
-        //     'password'=> $request->input('password'),
-        // ]);
 
         return redirect('/UpdateProfile');
     }

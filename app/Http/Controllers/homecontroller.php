@@ -9,9 +9,10 @@ use Illuminate\Support\Facades\Auth;
 class homecontroller extends Controller
 {
     public function homepage(){
-        if (!Auth::check()) {
-            return view("LoginUser");
-        }
+        //sementara jangan dipake dulu gara2 kita mau ngeShow homepage ke user yang belom login
+        // if (!Auth::check()) {
+        //     return view("LoginUser");
+        // }
 
         $mobils = Category::where('name', 'Mobil')->first()->data;
         $motors = Category::where('name', 'Motor')->first()->data;
