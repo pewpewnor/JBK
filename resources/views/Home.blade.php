@@ -10,6 +10,8 @@
   </head>
   <body>
 
+
+{{-- ini yang paling baru :D --}}
 @extends('Header.atas')
     
 @section('container')
