@@ -11,6 +11,8 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
+    @extends('Header.atas')
+    @section('container')
     <div class="flex flex-wrap my-12 mx-20 rounded-3xl justify-center">
         <div class="flex flex-col m-8 max-w-xl px-12 rounded-2xl">
                 <img class="w-96 h-80 mt-8 rounded-2xl" src="{{ asset('Assets/' . $vehicle->image) }}" alt="">
@@ -48,21 +50,21 @@
                     <div class="flex items-center">
                         <label class="inline-flex items-center mr-8">
                             <input type="radio" class="form-radio text-indigo-600" name="selectedBank" id="selectedBankBCA" value="BCA" {{ old('selectedBank') == 'BCA' ? 'checked' : '' }}>
-                            <img class="w-20" src="Assets/logoBCA.png" alt="">
+                            <img class="w-20" src="{{asset('Assets/logoBCA.png')}}" alt="">
                         </label>
                         <label class="inline-flex items-center mr-8">
                             <input type="radio" class="form-radio text-indigo-600" name="selectedBank" id="selectedBankBNI" value="BNI" {{ old('selectedBank') == 'BNI' ? 'checked' : '' }}>
-                            <img class="w-20" src="Assets/logoBNI.png" alt="">
+                            <img class="w-20" src="{{asset('Assets/logoBNI.png')}}" alt="">
                         </label>
 
                         <label class="inline-flex items-center mr-8">
                             <input type="radio" class="form-radio text-indigo-600" name="selectedBank" id="selectedBankBRI" value="BRI" {{ old('selectedBank') == 'BRI' ? 'checked' : '' }}>
-                            <img class="w-20" src="Assets/logoBRI.png" alt="">
+                            <img class="w-20" src="{{asset('Assets/logoBRI.png')}}" alt="">
                         </label>
 
                         <label class="inline-flex items-center mr-8">
                             <input type="radio" class="form-radio text-indigo-600" name="selectedBank" id="selectedBankMandiri" value="Mandiri" {{ old('selectedBank') == 'Mandiri' ? 'checked' : '' }}>
-                            <img class="w-20" src="Assets/logoMANDIRI.png" alt="">
+                            <img class="w-20" src="{{asset('Assets/logoMANDIRI.png')}}" alt="">
                         </label>
                     </div>
 
@@ -95,5 +97,6 @@
             </form>
         </div>
     </div>
+    @endsection
 </body>
 </html>

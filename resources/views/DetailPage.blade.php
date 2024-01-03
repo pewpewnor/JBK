@@ -14,22 +14,13 @@
 
 <body>
 
-
-
      <div style="width: 100%; height: 100%; position: relative; background: white">
 
         <div class="Gambar_Mobil" >
             <div style="width: 720px; height: 100px; left: 880px; top: 170px; position: absolute">
                 <img style="width: 720px; height: 520px; left: 0px; top: 150px; position: absolute; border-radius: 30px" src="{{ asset('Assets/' . $vehicle->image) }}" />
-                    {{-- Frame Gambar utama --}}
-                {{-- <div style="width: 220px; height: 220px; left: 0px; top: 754px; position: absolute; background: #D9D9D9; border-radius: 30px"></div>
-                <div style="width: 220px; height: 220px; left: 250px; top: 754px; position: absolute; background: #D9D9D9; border-radius: 30px"></div>
-                <div style="width: 220px; height: 220px; left: 500px; top: 754px; position: absolute; background: #D9D9D9; border-radius: 30px"></div> --}}
             </div>
         </div>
-
-
-
 
         <div class="Data_Mobil" >
             <div style="width: 857px; height: px; left: 250px; top: 150px; position: absolute">
@@ -44,20 +35,15 @@
             <div style="width: 840px; left: 0px; top: 658px; position: absolute; text-align: justify; color: #7C7C7C; font-size: 24px; font-family: Roboto; font-weight: 400; word-wrap: break-word; max-width: 550px">{{$vehicle->description}} </div>
             <div style="width: 857px; left: 0px; top: 497px; position: absolute; text-align: justify"><span style="color: #00A9FF; font-size: 24px; font-family: Roboto; font-weight: 400; word-wrap: break-word">Lokasi :</span><span style="color: #7C7C7C; font-size: 24px; font-family: Roboto; font-weight: 400; word-wrap: break-word"> {{$vehicle->location}}  {{--  Isi Lokasi--}}<br/></span><span style="color: #00A9FF; font-size: 24px; font-family: Roboto; font-weight: 400; word-wrap: break-word">Penjual :</span><span style="color: #7C7C7C; font-size: 24px; font-family: Roboto; font-weight: 400; word-wrap: break-word"> {{$vehicle->shopName}} {{-- Isi Penjual--}}</span></div>
 
-            {{-- <div style="width: 840px; height: 110px; left: 0px; top: 842px; position: absolute; background: #00A9FF; border-radius: 30px"></div> --}} {{--Tombol "Beli"--}}
-            {{-- <div style="left: 370px; top: 859px; position: absolute; text-align: center ; color: white; font-size: 60px; font-family: Roboto; font-weight: 700; word-wrap: break-word">Beli</div> Tulisan "Hubungi Penjual" --}}
-            <button  class= "Button_Beli "style="width: 840px; height: 110px; left: 0px; top: 842px; position: absolute; background: #00A9FF; border-radius: 30px ; border: none" >
+            <a href="/payment/{{$vehicle->id}}"><button  class= "Button_Beli "style="width: 840px; height: 110px; left: 0px; top: 842px; position: absolute; background: #00A9FF; border-radius: 30px ; border: none" >
 
                 <div style="left: 370px; top: 15px; position: absolute; text-align: center; color: white; font-size: 60px; font-family: Roboto; font-weight: 700; word-wrap: break-word">
                     Beli
                 </div>
-            </button>
-
-            </div>
-            <img style="width: 1920px; height: 317px; left: 0px; top: 1505px; position: absolute" src="https://via.placeholder.com/1920x317" />  {{-- Bagian Footer--}}
-            </div>
+            </button></a>
+            
         </div>
-
+        
 
 </body>
 </html>
