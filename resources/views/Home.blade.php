@@ -13,9 +13,18 @@
 @extends('Header.atas')
     
 @section('container')
-    <div class="home-container">
+    <!-- <div class="home-container">
       <img src="/Assets/Toyota-86.jpg" alt="mobil" class="Toyota-86" />
-    </div>
+    </div> -->
+    <header>
+			<p class="header-title">Jual/Beli Kendaraan Dengan Confidence</p>
+			<img
+				id="header-pic"
+				src="/Assets/Ford.jpg"
+				alt="header picture"
+				srcset=""
+			/>
+		</header>
     
     <br><br>
 
