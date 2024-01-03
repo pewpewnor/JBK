@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\homecontroller;
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\DetailPageController;
@@ -22,6 +23,8 @@ use Illuminate\Support\Facades\Auth;
 
 
 Route::get('/', [homecontroller::class, 'homepage']);
+
+Route::get('/category', [CategoryController::class, 'index']);
 
 Route::get('/LoginUser', function () {
     return view('LoginUser');

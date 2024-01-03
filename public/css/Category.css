@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins&display=swap");
+
+* {
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+.home-container {
+    width: 100vw;
+}
+
+.c-image {
+    height: 60vh;
+    object-fit: cover;
+}
+
+.c-content {
+    padding: 0 10rem;
+}
+
+.sub-judul {
+    font-size: 50px;
+}
+
+.c-row {
+    margin-top: 30px;
+    margin-right: 2px;
+    display: grid;
+    align-items: flex-start;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+.card {
+    background: #eaeaea;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 4px 5px 5px 0px rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+}
+
+.card-header,
+.card-body,
+.card-footer {
+    padding: 16px;
+}
+
+.card-img {
+    overflow: hidden;
+}
+
+.card-img > img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    transition: 200ms transform ease-in-out;
+}
+
+.card-img::after {
+    content: "";
+}
+
+.card-img > img:hover {
+    transform: scale(1.25);
+}
+
+.card-header > p {
+    font-size: 16px;
+}
+
+.card-body > p {
+    font-size: 14px;
+    text-align: justify;
+}
+
+.card-footer {
+    display: grid;
+    place-items: center;
+}
+
+.card-btn {
+    border: 1px solid black;
+    color: black;
+    font-size: 15px;
+    padding: 0.5em 0.75em;
+    border-radius: 0.25em;
+    cursor: pointer;
+}
+
+.card-btn:hover,
+.card-btn:focus {
+    background: #24252a;
+    color: white;
+}
